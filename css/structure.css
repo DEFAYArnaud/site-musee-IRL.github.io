@@ -380,4 +380,10 @@ button.scroll-to-top:before {
   gap: 2rem;
 }
 
+  .box-footer p.adress {
+    position: inherit;
+    text-align: center;
+  }
+
+
 }
