@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Musée IRL Nantes - Site officiel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Balises pour les mobiles -->
+  <meta name="theme-color" content="#F0F0F0" />
+  <!--/Balises pour les mobiles -->
+  <meta name="description" content="Site vitrine du musée IRL" />
+  <meta name="author" content="Quentin DEFAY" />
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/structure.css" />
+  <link rel="stylesheet" href="./css/accueil.css" />
+  <!-- Police Saffran -->
+  <link rel="stylesheet" href="https://use.typekit.net/qhw0ooe.css" />
+</head>
+
+<body class="preload">
+  <div class="root" id="root">
+    <header>
+      <!-- Injection JS -->
+    </header>
+
+    <main>
+      <section class="img-accueil">
+        <h1>Bienvenue dans le musée IRL de l’art digital à Nantes</h1>
+      </section>
+      <p class="description">
+        IRL est un musée dédié à l’art digital bousculant les codes
+        traditionnels de l’art physique. Les nouvelles technologies servent la
+        créativité des artistes, rendant possibles de nouvelles pratiques
+        artistiques.
+      </p>
+      <!-- Partie Découvrir Exposition -->
+      <section class="box-expo">
+        <h1>Découvrir nos expositions</h1>
+        <article class="item">
+          <img src="./img/img15.jpeg" alt="bandeaux led triangle" />
+          <div class="box-action">
+            <h2>Expositions temporaires</h2>
+            <div class="shadow">
+              <button onclick="switchOnglet('onglet1', 1)">
+                Voir les expositions
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="item">
+          <img src="./img/img13.jpeg" alt="musée d'oeuvre d'art" />
+          <div class="box-action">
+            <h2>Expositions temporaires</h2>
+            <div class="shadow">
+              <button onclick="switchOnglet('onglet2', 1)">
+                Voir les expositions
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- /Partie Découvrir Exposition -->
+      <!--Partie Infos Pratique -->
+      <section class="box-info">
+        <h1>Infos pratiques</h1>
+        <a href="./routes/info.html">Voir toutes les infos pratiques ></a>
+        <h2>Horaires d'ouverture</h2>
+        <p>
+          Du lundi au jeudi <span>10h - 18h</span><br />Du vendredi au
+          dimanche
+          <span>10h - 20h</span>
+        </p>
+        <h2>Adresse du musée</h2>
+        <p>3 Boulevard Léon Bruteau<br />42000 Nantes</p>
+      </section>
+      <!-- /Partie Infos Pratique -->
+    </main>
+
+    <footer>
+      <!-- Injection JS -->
+    </footer>
+  </div>
+
+  <!-- Script Personel (Function ...) -->
+  <script type="text/javascript">
+    // Supprimer Class body preload après chargement
+    window.onload = () => {
+      document.body.classList.remove("preload");
+      injectionFooter("./");
+      injectionHeader("index");
+      footerPosition();
+    };
+  </script>
+  <script type="text/javascript" src="./js/function.js"></script>
+</body>
+
+</html>

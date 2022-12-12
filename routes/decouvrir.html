@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="../favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F0F0F0" />
+  <meta name="description" content="Site vitrine du musée IRL" />
+  <title>Découvrir - Musée IRL Nantes</title>
+  <link rel="stylesheet" href="../css/structure.css" />
+  <link rel="stylesheet" href="../css/decouvrir.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/qhw0ooe.css" />
+</head>
+
+<body onload="switchOnglet('', 2), injectionFooter('../'), injectionHeader('decouvrir'), footerPosition()"
+  onscroll="updateDataScroll()">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="root" id="root">
+    <header>
+      <!-- Injection JS -->
+    </header>
+
+    <main>
+      <!-- Bouton To Scroll Top -->
+      <button id="scroll_top" class="scroll-to-top" onclick="scroolTo(0)">
+        <svg width="2rem" height="1rem" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20 8.31929L12.0667 0.807061C11.519 0.290178 10.7777 0 10.005 0C9.23228 0 8.49101 0.290178 7.94333 0.807061L0 8.32798L1.7675 10L9.71 2.47908C9.78814 2.40501 9.8941 2.3634 10.0046 2.3634C10.1151 2.3634 10.221 2.40501 10.2992 2.47908L18.2325 9.9921L20 8.31929Z"
+            fill="#F0F0F0" />
+        </svg>
+      </button>
+      <!-- /Bouton To Scroll Top  -->
+      <h1 class="title">Découvrir les expositions du musée IRL</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Quam ac arcu curabitur platea
+        et ut amet. Fusce eros facilisi tristique nisl sed elementum. Pharetra
+        ligula habitant lorem netus suspendisse faucibus. Faucibus cras id
+        mattis neque.
+      </p>
+      <!-- Barre Onglet -->
+      <nav class="onglet">
+        <button id="onglet1" class="item" onclick="switchOnglet('onglet1', 0)">
+          Expositions temporaires
+        </button>
+        <button id="onglet2" class="item" onclick="switchOnglet('onglet2', 0)">
+          Expositions permanentes
+        </button>
+      </nav>
+      <!-- /Barre Onglet  -->
+      <!-- Box Expositions -->
+      <!-- Contenu auto généré par JS -->
+      <section id="containExpo" class="contain-expo"></section>
+      <!-- / Box Expositions -->
+    </main>
+
+    <footer>
+      <!-- Injection JS -->
+    </footer>
+  </div>
+</body>
+
+<!-- Script JS Lodash & Personnel -->
+<script type="text/javascript" src="../js/function.js"></script>
+<script type="text/javascript" src="../js/exposition.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+
+</html>

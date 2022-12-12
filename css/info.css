@@ -1,0 +1,114 @@
+main h1 {
+  color: rgb(10, 10, 10);
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 4.9rem 0 0 0;
+}
+main h2 {
+  color: rgb(10, 10, 10);
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3rem 0 1rem 0;
+}
+main .box-tarif {
+  width: calc(100% - 6rem);
+  max-width: 78.9rem;
+  display: flex;
+  flex-direction: column;
+}
+main .box-tarif .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+main .box-tarif .item p {
+  color: rgb(10, 10, 10);
+  font-size: 1.4rem;
+  margin: 0;
+}
+main .box-tarif .item span {
+  width: 5rem;
+  color: rgb(10, 10, 10);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: right;
+}
+main .box-tarif hr {
+  width: 100%;
+  border: 0.1rem solid rgba(57, 58, 59, 0.5);
+  margin-top: 1.5rem;
+}
+main .contain {
+  width: calc(100% - 6rem);
+  max-width: 78.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+main .contain .box-left .box-horaire {
+  width: 26rem;
+  display: flex;
+  justify-content: space-between;
+}
+main .contain .box-left .box-horaire p {
+  margin: 0;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+main .contain .box-left p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+main .contain .box-right .box-reseau {
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) and (orientation: portrait), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  main .contain .box-right .box-reseau {
+    width: calc(100vw - 6rem);
+  }
+}
+main .contain .box-right .box-reseau .item {
+  text-decoration: none;
+  -webkit-mask-image: url(../mask/mask8.svg);
+  -webkit-mask-size: 100% 92%;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../mask/mask8.svg);
+  mask-repeat: no-repeat;
+  mask-size: 100% 92%;
+  mask-position: center;
+  background-repeat: no-repeat;
+  background-position: 2.5rem center, center;
+  background-size: 3.7rem, cover;
+  width: 31.5rem;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main .contain .box-right .box-reseau .item p {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: rgb(240, 240, 240);
+  line-height: 2.2rem;
+  margin-left: 8.2rem;
+}
+main .contain .box-right .box-reseau .item p span {
+  color: rgba(240, 240, 240, 0.5);
+}
+main .contain .box-right .box-reseau .twitter {
+  background-image: url("../img/twitter.svg"), url(../img/background.jpg);
+}
+main .contain .box-right .box-reseau .facebook {
+  background-image: url("../img/facebook.svg"), url(../img/background.jpg);
+}
+main .contain .box-right .box-reseau .instagram {
+  background-image: url("../img/instagram.svg"), url(../img/background.jpg);
+}
